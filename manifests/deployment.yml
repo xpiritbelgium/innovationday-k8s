@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aksklinnovationday-7f0c"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aksklinnovationday-7f0c"
+  template:
+    metadata:
+      labels:
+        app: "aksklinnovationday-7f0c"
+    spec:
+      containers:
+        - name: "aksklinnovationday-7f0c"
+          image: "azrklinnovationday.azurecr.io/aksklinnovationday"
+          ports:
+          - containerPort: 80
