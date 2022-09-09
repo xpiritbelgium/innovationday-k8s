@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello-Xpirit", "Hello-Xpirit\Hello-Xpirit.csproj", "{B2C77558-D261-47CA-8C98-9CD2BA2FAAAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2C77558-D261-47CA-8C98-9CD2BA2FAAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C77558-D261-47CA-8C98-9CD2BA2FAAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C77558-D261-47CA-8C98-9CD2BA2FAAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C77558-D261-47CA-8C98-9CD2BA2FAAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F98A7353-0D8C-41DD-BAE5-678DFC3B6310}
+	EndGlobalSection
+EndGlobal
