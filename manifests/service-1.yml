@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "akswouterinnovation-a9fa"
+    labels:
+        app: "akswouterinnovation-a9fa"
+spec:
+    type: ClusterIP
+    ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    selector:
+        app: "akswouterinnovation-a9fa"
