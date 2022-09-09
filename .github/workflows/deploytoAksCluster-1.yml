@@ -44,7 +44,6 @@ jobs:
         manifests: |
           manifests/deployment-1.yml
           manifests/service-1.yml
-          manifests/ingress.yml
         images: |
           learningxperience.azurecr.io/akswouterinnovation:${{ github.sha }}
         imagepullsecrets: |
