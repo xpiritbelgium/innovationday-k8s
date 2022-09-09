@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "akswouterinnovation-a9fa"
+    labels:
+        app: "akswouterinnovation-a9fa"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: default-akswouterinnovation-a9fa.089b207d807f4019842d.westeurope.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "akswouterinnovation-a9fa"
+                servicePort: 80
