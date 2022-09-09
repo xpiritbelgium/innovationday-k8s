@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "akswouterinnovation-a9fa"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "akswouterinnovation-a9fa"
+  template:
+    metadata:
+      labels:
+        app: "akswouterinnovation-a9fa"
+    spec:
+      containers:
+        - name: "akswouterinnovation-a9fa"
+          image: "learningxperience.azurecr.io/akswouterinnovation"
+          ports:
+          - containerPort: 80
