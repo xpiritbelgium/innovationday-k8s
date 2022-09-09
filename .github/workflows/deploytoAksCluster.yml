@@ -26,7 +26,7 @@ jobs:
       - name: Build and push image to ACR
         id: build-image
         run: |
-          docker build "$GITHUB_WORKSPACE" -f  "Hello-Xpirit/Hello-Xpirit/Dockerfile" -t azrklinnovationday.azurecr.io/aksklinnovationday:${{ github.sha }} --label dockerfile-path=Hello-Xpirit/Hello-Xpirit/Dockerfile
+          docker build "$GITHUB_WORKSPACE/Hello-Xpirit" -f  "Hello-Xpirit/Hello-Xpirit/Dockerfile" -t azrklinnovationday.azurecr.io/aksklinnovationday:${{ github.sha }} --label dockerfile-path=Hello-Xpirit/Hello-Xpirit/Dockerfile
           docker push azrklinnovationday.azurecr.io/aksklinnovationday:${{ github.sha }}
 
       - uses: azure/k8s-set-context@v1
